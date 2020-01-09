@@ -1,5 +1,5 @@
 require 'facebook/messenger'
-require 'dotenv/load'
+
 include Facebook::Messenger
 
 Facebook::Messenger::Subscriptions.subscribe(
