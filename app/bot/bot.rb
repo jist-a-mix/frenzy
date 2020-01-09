@@ -3,7 +3,7 @@ require 'dotenv/load'
 include Facebook::Messenger
 
 Facebook::Messenger::Subscriptions.subscribe(
-  access_token: ENV['ACCESS_TOKEN',
+  access_token: ENV['ACCESS_TOKEN'],
   	subscribed_fields: %w[feed mention name]
 )
 
